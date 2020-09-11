@@ -1,0 +1,15 @@
+@use '../reset.css';
+@use '../style.css';
+
+:root {
+	// https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+
+	font: {
+		size: 16px;
+	}
+}
+
+* {
+	height: auto;
+	width: auto;
+}

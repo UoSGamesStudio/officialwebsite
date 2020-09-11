@@ -1,0 +1,35 @@
+#splash {
+  position: fixed;
+  z-index: -5;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: yellow url("../img/2D_lgpurple_full.png") center no-repeat fixed;
+}
+#splash .filter {
+  height: 100%;
+  width: 100%;
+  background-color: #000A;
+}
+
+main {
+  margin-top: 80vh;
+}
+main > h1.title {
+  height: 20vh;
+  background-color: darkgray;
+  display: flex;
+  align-items: center;
+}
+main > h1.title span {
+  width: 100%;
+  font-size: 5rem;
+  text-align: center;
+}
+
+#games {
+  min-height: 10rem;
+  width: 80%;
+  margin: 1rem auto 0;
+  background-color: lightblue;
+}
