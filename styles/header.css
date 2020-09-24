@@ -1,4 +1,4 @@
-header {
+#title-bar {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: center;
 }
-header .bkg {
+#title-bar .bkg {
   position: absolute;
   z-index: 5;
   height: 100%;
@@ -15,7 +15,7 @@ header .bkg {
   background-color: lightblue;
   clip-path: polygon(100% 0, 100% 100%, 50% 75%, 0 100%, 0 0);
 }
-header .wrapper {
+#title-bar .wrapper {
   position: absolute;
   z-index: 10;
   height: 100%;

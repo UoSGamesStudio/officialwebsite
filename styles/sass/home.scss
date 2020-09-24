@@ -1,3 +1,7 @@
+:root {
+	--games-bkg: black;
+	--card-bradius: 1rem;
+}
 
 #splash {
 	position: fixed;
@@ -36,9 +40,108 @@ main {
 
 #games {
 	min-height: 10rem;
-	width: 80%;
+	width: 92%;
 
 	margin: 1rem auto 0;
+	padding: .7rem;
 
-	background-color: lightblue;
+	display: flex;
+	flex-direction: row;
+
+	background-color: var(--games-bkg);
+}
+
+.card {
+	position: relative;
+
+	height: 13rem;
+	width: 23rem;
+
+	// margin: .6rem;
+
+	background-color: yellowgreen;
+
+	border-radius: var(--card-bradius);
+
+	&:hover {
+		transform: translateY(-1rem);
+
+		&~.card {
+			transform: translateX(4rem);
+		}
+	}
+
+	&:not(:first-child) {
+		margin-left: -14rem;
+		box-shadow: -1rem 0 2rem var(--games-bkg);
+	}
+
+	.text-bkg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+
+		width: 66%;
+
+		background-color: yellow;
+		border-radius: 0 var(--card-bradius) var(--card-bradius) 0;
+	}
+}
+
+.card-icon {
+	position: absolute;
+	top: .4rem;
+	left: .4rem;
+
+	height: 1.4rem;
+	width: 1.4rem;
+
+	border-radius: 50%;
+}
+
+.card-art {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	height: 100%;
+	width: 45%;
+
+	background-color: yellow;
+	border-radius: var(--card-bradius) 0 0 var(--card-bradius);
+}
+
+.card-header {
+	position: absolute;
+	top: .4rem;
+	right: .4rem;
+
+	height: 4rem;
+	width: 65%;
+
+	display: flex;
+	align-items: center;
+
+	background-color: blue;
+
+	>* {
+		width: 100%;
+		font-size: 1.4rem;
+		text-align: right;
+	}
+}
+
+.card-desc {
+	position: absolute;
+	bottom: .2rem;
+	right: .4rem;
+
+	height: 60%;
+	width: 55%;
+
+	text-align: justify;
+
+	background-color: red;
 }
